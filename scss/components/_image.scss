@@ -1,6 +1,6 @@
 .program-img {
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
   box-shadow: 1px 1px 20px var(--color-ligth-gray);
   object-fit: cover;
 }
@@ -18,8 +18,7 @@
 .a-campaign-img {
   width: 30rem;
   height: 20rem;
-  filter:
-    grayscale(100%) brightness(50%) sepia(76%) hue-rotate(340deg)
+  filter: grayscale(100%) brightness(50%) sepia(76%) hue-rotate(340deg)
     saturate(1000%) contrast(85%);
 }
 
