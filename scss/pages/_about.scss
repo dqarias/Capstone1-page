@@ -6,23 +6,30 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
+
   &__title {
     margin: 1.6rem;
+
     @extend .hero__title;
+
     text-align: center;
     background-image: none;
     color: var(--color-primary-orange);
   }
+
   &__quote {
     @extend .hero__quote;
   }
+
   &__description {
     @include box;
   }
+
   &__contact {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
     margin-top: 1.6rem;
     text-align: center;
+
     &-email {
       margin-top: 1.6rem;
       font-weight: 700;
@@ -34,22 +41,28 @@
 .a-about {
   padding: 3.2rem 1.6rem;
   border-bottom: 1px solid var(--color-ligth-gray);
+
   &__title {
     margin: 1.6rem;
-    padding: 0rem 2.4rem;
+    padding: 0 2.4rem;
+
     @extend .work__title;
+
     color: var(--color-primary-black);
   }
+
   &__description {
     margin: 1.6rem;
-    padding: 0rem 1rem;
+    padding: 0 1rem;
     text-align: center;
   }
+
   &__img {
     margin: 1.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
+
     @include box;
   }
 }
@@ -58,21 +71,23 @@
   margin-top: 3.2rem;
   margin-bottom: 3.2rem;
   padding: 0 1.6rem;
+
   &__title {
     @extend .work__title;
+
     color: var(--color-primary-black);
   }
 
   &__description {
     margin: 1.6rem;
-    padding: 0rem 1rem;
+    padding: 0 1rem;
     text-align: center;
   }
 
   &__images {
     display: flex;
     flex-direction: column;
-    padding: 0rem 3.2rem;
+    padding: 0 3.2rem;
     justify-content: center;
     align-items: center;
     gap: 2.4rem;

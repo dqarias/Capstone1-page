@@ -1,8 +1,6 @@
 .program {
   &__container {
     margin: 1.6rem;
-    display: flex;
-    align-items: center;
     gap: 1rem;
     display: grid;
     grid-template-columns: 35% 65%;
@@ -31,7 +29,7 @@
     height: 0.1rem;
     width: 50%;
     border-bottom: 0.2rem solid var(--color-ligth-gray);
-    padding: 0.4rem 0rem;
+    padding: 0.4rem 0;
   }
 
   &__description {

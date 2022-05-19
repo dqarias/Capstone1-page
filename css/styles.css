@@ -58,8 +58,8 @@ ul {
 }
 
 .program-img {
-  width: 100%;
-  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
   box-shadow: 1px 1px 20px var(--color-ligth-gray);
   object-fit: cover;
 }
@@ -191,7 +191,7 @@ ul {
   width: 50%;
   border-bottom: 2px solid var(--color-primary-orange);
   margin: 0 auto;
-  padding: 4px 0px;
+  padding: 4px 0;
 }
 .work__button {
   margin: 1.6rem auto;
@@ -234,8 +234,6 @@ ul {
 
 .program__container {
   margin: 1.6rem;
-  display: flex;
-  align-items: center;
   gap: 1rem;
   display: grid;
   grid-template-columns: 35% 65%;
@@ -262,7 +260,7 @@ ul {
   height: 0.1rem;
   width: 50%;
   border-bottom: 0.2rem solid var(--color-ligth-gray);
-  padding: 0.4rem 0rem;
+  padding: 0.4rem 0;
 }
 .information__description {
   font-size: 1.2rem;
@@ -283,22 +281,6 @@ ul {
 .partner__logo {
   width: 30%;
   max-width: 20rem;
-}
-
-.copyrigth__container {
-  display: flex;
-  align-items: center;
-}
-.copyrigth__image {
-  padding: 1rem;
-  min-width: 50%;
-}
-.copyrigth__text {
-  padding: 1rem;
-  min-width: 50%;
-}
-.copyrigth__text p {
-  font-size: 1.2rem;
 }
 
 .footer {
@@ -358,12 +340,12 @@ ul {
 }
 .a-about__title {
   margin: 1.6rem;
-  padding: 0rem 2.4rem;
+  padding: 0 2.4rem;
   color: var(--color-primary-black);
 }
 .a-about__description {
   margin: 1.6rem;
-  padding: 0rem 1rem;
+  padding: 0 1rem;
   text-align: center;
 }
 .a-about__img {
@@ -388,13 +370,13 @@ ul {
 }
 .a-campaign__description {
   margin: 1.6rem;
-  padding: 0rem 1rem;
+  padding: 0 1rem;
   text-align: center;
 }
 .a-campaign__images {
   display: flex;
   flex-direction: column;
-  padding: 0rem 3.2rem;
+  padding: 0 3.2rem;
   justify-content: center;
   align-items: center;
   gap: 2.4rem;
