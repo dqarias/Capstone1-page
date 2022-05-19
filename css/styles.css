@@ -1,0 +1,422 @@
+@import url("http://fonts.cdnfonts.com/css/lato");
+@font-face {
+  font-family: "Cocogoose";
+  src: url(/assets/fonts/Cocogoose\ Pro\ Light-trial.ttf);
+}
+@font-face {
+  font-family: "Cocogoose";
+  src: url(/assets/fonts/Cocogoose\ Pro\ Semilight-trial.ttf);
+}
+@font-face {
+  font-family: "Cocogoose";
+  src: url(/assets/fonts/Cocogoose\ Pro\ Thin-trial.ttf);
+}
+@font-face {
+  font-family: "Cocogoose";
+  src: url(/assets/fonts/Cocogoose\ Pro-trial.ttf);
+}
+body {
+  --color-primary-black: #272a31;
+  --color-primary-orange: #ec5242;
+  --color-transparent-black: #272a31bf;
+  --color-transparent-orange: #ec5342d3;
+  --color-ligth-gray: #d3d3d3;
+  --color-ligth-white: #fff;
+  --font-titles: "Cocogoose", sans-serif;
+  --font-subtitles: "Lato", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font-subtitles);
+  font-style: normal;
+  color: var(--color-primary-black);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.card_icons {
+  color: var(--color-ligth-white);
+}
+
+.program-img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 1px 1px 20px var(--color-ligth-gray);
+  object-fit: cover;
+}
+
+.partner-img {
+  width: 100%;
+  filter: grayscale(100%);
+}
+
+.copyrigth-img {
+  width: 80%;
+  filter: grayscale(100%);
+}
+
+.a-campaign-img {
+  width: 30rem;
+  height: 20rem;
+  filter: grayscale(100%) brightness(50%) sepia(76%) hue-rotate(340deg) saturate(1000%) contrast(85%);
+}
+
+.a-about-img {
+  width: 20rem;
+  height: 10rem;
+  filter: grayscale(100%);
+}
+
+.btn-primary {
+  background-color: var(--color-primary-orange);
+  color: var(--color-ligth-gray);
+  padding: 1.6rem 2.4rem;
+  cursor: pointer;
+}
+
+.header {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.header__nav {
+  display: none;
+}
+
+.navigation {
+  background-color: transparent;
+  padding: 1.6rem;
+}
+.navigation__logo {
+  display: none;
+}
+.navigation__menu {
+  width: 3rem;
+  height: 2.5rem;
+}
+.navigation__links {
+  display: none;
+}
+
+.hero {
+  padding-top: 10rem;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  padding-bottom: 6rem;
+  background-image: url("https://gatoandino.org/wp-content/uploads/2019/08/hero-compressed.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.hero__title, .a-hero__title {
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: url("/assets/images/bg-cat.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  line-height: 4rem;
+  font-size: 3.6rem;
+  font-weight: 900;
+  font-family: var(--font-titles);
+  color: var(--color-transparent-orange);
+}
+.hero__quote, .a-hero__quote {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: var(--font-subtitles);
+  color: var(--color-primary-orange);
+}
+.hero__description {
+  line-height: 2.4rem;
+  font-size: 1.4rem;
+  border: 4px solid rgb(255, 255, 255);
+  background-color: rgb(241, 241, 247);
+  padding: 1.4rem;
+}
+
+.hero_information-date {
+  color: var(--color-transparent-black);
+  font-size: 2.4rem;
+  font-family: var(--font-titles);
+  font-weight: 500;
+}
+
+.work {
+  background-color: var(--color-primary-black);
+  background-image: url("/assets/images/cardPatternBg.png");
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+  display: flex;
+  flex-direction: column;
+}
+.work__title, .a-campaign__title, .a-about__title, .partners__title, .programs__title {
+  color: var(--color-ligth-white);
+  text-align: center;
+  font-weight: 400;
+}
+.work__title::after, .a-campaign__title::after, .a-about__title::after, .partners__title::after, .programs__title::after {
+  display: block;
+  clear: both;
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  max-width: 50px;
+  height: 1px;
+  width: 50%;
+  border-bottom: 2px solid var(--color-primary-orange);
+  margin: 0 auto;
+  padding: 4px 0px;
+}
+.work__button {
+  margin: 1.6rem auto;
+  background-color: aqua;
+}
+
+.card {
+  margin: 1.6rem;
+}
+.card__container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.6rem;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  display: grid;
+  grid-template-columns: 15% 35% 50%;
+}
+.card__icon {
+  justify-self: center;
+  align-self: center;
+}
+.card__title {
+  color: var(--color-primary-orange);
+  justify-self: center;
+  align-self: center;
+}
+.card__description {
+  justify-self: center;
+  align-self: center;
+  font-size: 1.2rem;
+  color: var(--color-ligth-gray);
+}
+
+.programs {
+  margin-top: 3.2rem;
+}
+.programs__title {
+  color: var(--color-primary-black);
+}
+
+.program__container {
+  margin: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.information__phrase {
+  color: var(--color-primary-orange);
+  font-style: italic;
+  font-size: 1.2rem;
+}
+.information__phrase::after {
+  display: block;
+  clear: both;
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  max-width: 2.5rem;
+  height: 0.1rem;
+  width: 50%;
+  border-bottom: 0.2rem solid var(--color-ligth-gray);
+  padding: 0.4rem 0rem;
+}
+.information__description {
+  font-size: 1.2rem;
+}
+
+.partners {
+  padding: 3.2rem 1.6rem;
+  background-color: var(--color-primary-black);
+}
+.partner__container {
+  margin-top: 2.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  justify-content: center;
+  align-items: center;
+}
+.partner__logo {
+  width: 30%;
+  max-width: 20rem;
+}
+
+.copyrigth__container {
+  display: flex;
+  align-items: center;
+}
+.copyrigth__image {
+  padding: 1rem;
+  min-width: 50%;
+}
+.copyrigth__text {
+  padding: 1rem;
+  min-width: 50%;
+}
+.copyrigth__text p {
+  font-size: 1.2rem;
+}
+
+.footer {
+  padding: 3.2rem;
+}
+
+.copyrigth__container {
+  display: flex;
+  align-items: center;
+}
+.copyrigth__image {
+  padding: 1rem;
+  min-width: 50%;
+}
+.copyrigth__text {
+  padding: 1rem;
+  min-width: 50%;
+}
+.copyrigth__text p {
+  font-size: 1.2rem;
+}
+
+.a-hero__container {
+  margin-top: 10rem;
+  padding: 0 1.6rem;
+  background-image: url("/assets/images/about_bg_01.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.a-hero__title {
+  margin: 1.6rem;
+  text-align: center;
+  background-image: none;
+  color: var(--color-primary-orange);
+}
+.a-hero__description {
+  line-height: 2.4rem;
+  font-size: 1.4rem;
+  border: 2px solid var(--color-ligth-gray);
+  background-color: var(--color-ligth-white);
+  padding: 1.4rem;
+}
+.a-hero__contact {
+  font-size: 1.2rem;
+  margin-top: 1.6rem;
+  text-align: center;
+}
+.a-hero__contact-email {
+  margin-top: 1.6rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.a-about {
+  padding: 3.2rem 1.6rem;
+  border-bottom: 1px solid var(--color-ligth-gray);
+}
+.a-about__title {
+  margin: 1.6rem;
+  padding: 0rem 2.4rem;
+  color: var(--color-primary-black);
+}
+.a-about__description {
+  margin: 1.6rem;
+  padding: 0rem 1rem;
+  text-align: center;
+}
+.a-about__img {
+  margin: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 2.4rem;
+  font-size: 1.4rem;
+  border: 2px solid var(--color-ligth-gray);
+  background-color: var(--color-ligth-white);
+  padding: 1.4rem;
+}
+
+.a-campaign {
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  padding: 0 1.6rem;
+}
+.a-campaign__title {
+  color: var(--color-primary-black);
+}
+.a-campaign__description {
+  margin: 1.6rem;
+  padding: 0rem 1rem;
+  text-align: center;
+}
+.a-campaign__images {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 3.2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+.a-campaign__information {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.a-campaign__txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-ligth-gray);
+}
+.a-campaign__txt .txt__year {
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+.a-campaign__txt .txt__place {
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=styles.css.map */

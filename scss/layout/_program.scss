@@ -1,0 +1,40 @@
+.program {
+  &__container {
+    margin: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 35% 65%;
+  }
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  &__phrase {
+    color: var(--color-primary-orange);
+    font-style: italic;
+    font-size: 1.2rem;
+  }
+
+  &__phrase::after {
+    display: block;
+    clear: both;
+    content: "";
+    position: relative;
+    left: 0;
+    bottom: 0;
+    max-width: 2.5rem;
+    height: 0.1rem;
+    width: 50%;
+    border-bottom: 0.2rem solid var(--color-ligth-gray);
+    padding: 0.4rem 0rem;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+  }
+}

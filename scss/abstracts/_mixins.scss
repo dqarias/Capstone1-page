@@ -1,0 +1,7 @@
+@mixin box {
+  line-height: 2.4rem;
+  font-size: 1.4rem;
+  border: 2px solid var(--color-ligth-gray);
+  background-color: var(--color-ligth-white);
+  padding: 1.4rem;
+}

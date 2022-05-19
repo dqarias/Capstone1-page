@@ -1,0 +1,9 @@
+.header {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  &__nav {
+    display: none;
+  }
+}

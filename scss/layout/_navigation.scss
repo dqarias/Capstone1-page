@@ -1,0 +1,17 @@
+.navigation {
+  background-color: transparent;
+  padding: 1.6rem;
+
+  &__logo {
+    display: none;
+  }
+
+  &__menu {
+    width: 3rem;
+    height: 2.5rem;
+  }
+
+  &__links {
+    display: none;
+  }
+}

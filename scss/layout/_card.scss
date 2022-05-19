@@ -1,0 +1,26 @@
+.card {
+  margin: 1.6rem;
+  &__container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.6rem;
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+    display: grid;
+    grid-template-columns: 15% 35% 50%;
+  }
+  &__icon {
+    justify-self: center;
+    align-self: center;
+  }
+  &__title {
+    color: var(--color-primary-orange);
+    justify-self: center;
+    align-self: center;
+  }
+  &__description {
+    justify-self: center;
+    align-self: center;
+    font-size: 1.2rem;
+    color: var(--color-ligth-gray);
+  }
+}

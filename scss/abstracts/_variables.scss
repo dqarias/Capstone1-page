@@ -1,0 +1,34 @@
+@import url("http://fonts.cdnfonts.com/css/lato");
+
+@font-face {
+  font-family: "Cocogoose";
+  src: url(/assets/fonts/Cocogoose\ Pro\ Light-trial.ttf);
+}
+
+@font-face {
+  font-family: "Cocogoose";
+  src: url(/assets/fonts/Cocogoose\ Pro\ Semilight-trial.ttf);
+}
+
+@font-face {
+  font-family: "Cocogoose";
+  src: url(/assets/fonts/Cocogoose\ Pro\ Thin-trial.ttf);
+}
+
+@font-face {
+  font-family: "Cocogoose";
+  src: url(/assets/fonts/Cocogoose\ Pro-trial.ttf);
+}
+
+body {
+  // colors variables
+  --color-primary-black: #272a31;
+  --color-primary-orange: #ec5242;
+  --color-transparent-black: #272a31bf;
+  --color-transparent-orange: #ec5342d3;
+  --color-ligth-gray: #d3d3d3;
+  --color-ligth-white: #fff;
+  // fonts variables
+  --font-titles: "Cocogoose", sans-serif;
+  --font-subtitles: "Lato", sans-serif;
+}
