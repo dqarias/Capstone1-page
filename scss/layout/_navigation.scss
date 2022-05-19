@@ -15,3 +15,52 @@
     display: none;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .navigation {
+    background-color: var(--color-ligth-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8%;
+    z-index: 1;
+    &__logo {
+      display: flex;
+      & .logo {
+        width: 15rem;
+        filter: grayscale(100%);
+      }
+    }
+    &__menu {
+      display: none;
+    }
+    &__links {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 8%;
+      gap: 6%;
+      & .navigation__link {
+        color: #272a31;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .navigation {
+    padding-left: 12%;
+    &__logo {
+      & .logo {
+        width: 15rem;
+        filter: grayscale(100%);
+      }
+    }
+    &__links {
+      padding-right: 12%;
+      gap: 20%;
+      & .navigation__link {
+        font-weight: 700;
+      }
+    }
+  }
+}

@@ -1,9 +1,11 @@
 .program {
+  display: grid;
+  grid-template-columns: (100%);
   &__container {
     margin: 1.6rem;
     gap: 1rem;
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 35% 63%;
   }
 }
 
@@ -34,5 +36,28 @@
 
   &__description {
     font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .program {
+    column-gap: 0.5%;
+    row-gap: 4%;
+    margin: 4% 8%;
+    grid-template-columns: (50% 50%);
+    &__container {
+      margin: 2% 0%;
+    }
+  }
+  .information {
+    gap: 0.8rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .program {
+    column-gap: 1%;
+    margin: 4% 12%;
+    grid-template-columns: (50% 50%);
   }
 }

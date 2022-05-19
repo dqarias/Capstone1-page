@@ -29,6 +29,20 @@
 
   &__button {
     margin: 1.6rem auto;
-    background-color: aqua;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .work {
+    &__button {
+      & a {
+        background-color: transparent;
+        color: var(--color-ligth-gray);
+        padding: 0.8rem 1.6rem;
+        text-decoration: underline;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
   }
 }

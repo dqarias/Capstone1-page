@@ -22,3 +22,11 @@
     max-width: 20rem;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .partner {
+    &__container {
+      gap: 1.5%;
+    }
+  }
+}
