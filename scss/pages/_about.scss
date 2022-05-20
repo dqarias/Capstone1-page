@@ -153,16 +153,15 @@
       padding: 0;
     }
   }
+
   .a-main {
     & .partners {
       display: none;
     }
   }
 
-  .a-footer{
-      background-color: var(--color-primary-black);
-      color: var(--color-ligth-gray);
+  .a-footer {
+    background-color: var(--color-primary-black);
+    color: var(--color-ligth-gray);
   }
 }
-
-

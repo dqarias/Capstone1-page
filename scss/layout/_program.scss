@@ -10,7 +10,7 @@
   }
 }
 
-.programs__image{
+.programs__image {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
@@ -20,15 +20,18 @@
   background-repeat: no-repeat;
   box-shadow: 1px 1px 20px var(--color-ligth-gray);
   background-color: #00000005;
-  &-img{
+
+  &-img {
     width: 90%;
     height: 80%;
   }
+
   &__:hover {
-  filter: brightness(0.7);
-  transform: scale(1.1, 1.1);
+    filter: brightness(0.7);
+    transform: scale(1.1, 1.1);
+  }
 }
-}
+
 .information {
   display: flex;
   flex-direction: column;
