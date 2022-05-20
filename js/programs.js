@@ -51,11 +51,15 @@ const renderProgram = () => {
     programContainer.classList.add('program__container');
     programContainer.innerHTML = `
         <div class="programs__image">
+        <div class="programs__image-bg">
+        </div>
+        <div class="programs__image-img">
           <img
             class="program-img"
             src="${program.image}"
             alt=""
           />
+        </div>
         </div>
         <div class="information">
           <h3 class="information__name">${program.name}</h3>
