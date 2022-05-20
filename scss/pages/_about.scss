@@ -11,7 +11,9 @@
 
   &__title {
     margin: 1.6rem;
+
     @extend .hero__title;
+
     text-align: center;
     background-image: none;
     color: var(--color-primary-orange);
@@ -45,7 +47,9 @@
   &__title {
     margin: 1.6rem;
     padding: 0 2.4rem;
+
     @extend .work__title;
+
     color: var(--color-primary-black);
   }
 
@@ -60,6 +64,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     @include box;
   }
 }
@@ -129,6 +134,7 @@
       font-size: 1.6rem;
     }
   }
+
   .a-about {
     padding-left: 20%;
     padding-right: 20%;
@@ -137,9 +143,11 @@
       margin: 4% 30%;
     }
   }
+
   .a-campaign {
     padding-left: 20%;
     padding-right: 20%;
+
     &__images {
       flex-direction: row;
       padding: 0;

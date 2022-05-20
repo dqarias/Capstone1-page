@@ -135,7 +135,7 @@ ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 1rem 0rem;
+    padding: 1rem 0;
     padding-right: 10%;
     gap: 1.6rem;
     color: var(--color-ligth-gray);
@@ -209,7 +209,7 @@ ul {
   }
   .navigation__list:hover {
     background-color: var(--color-transparent-orange);
-    border-bottom: 0px solid var(--color-ligth-gray);
+    border-bottom: 0 solid var(--color-ligth-gray);
     border-left: 6px solid var(--color-primary-orange);
   }
   .navigation__list-btn {

@@ -1,16 +1,16 @@
 .program {
   display: grid;
   grid-template-columns: (100%);
+
   &__container {
     margin: 1.6rem;
     gap: 1rem;
     display: grid;
     grid-template-columns: 35% 63%;
   }
-
 }
 
-.programs__image:hover{
+.programs__image:hover {
   filter: brightness(0.7);
   transform: scale(1.1, 1.1);
 }
@@ -51,10 +51,12 @@
     row-gap: 4%;
     margin: 4% 8%;
     grid-template-columns: (50% 50%);
+
     &__container {
       margin: 2% 0%;
     }
   }
+
   .information {
     gap: 0.8rem;
   }

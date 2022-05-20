@@ -5,6 +5,7 @@
   position: fixed;
   top: 0;
   left: 0;
+
   &__nav {
     display: none;
   }
@@ -16,11 +17,12 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      padding: 1rem 0rem;
+      padding: 1rem 0;
       padding-right: 10%;
       gap: 1.6rem;
       color: var(--color-ligth-gray);
       background-color: var(--color-primary-black);
+
       & a {
         color: var(--color-ligth-gray);
       }
