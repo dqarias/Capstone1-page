@@ -10,6 +10,11 @@
     grid-template-columns: 15% 35% 50%;
   }
 
+  &__container:hover{
+    filter: brightness(0.9);
+  transform: scale(1.1, 1.1);
+  }
+
   &__icon {
     justify-self: center;
     align-self: center;
