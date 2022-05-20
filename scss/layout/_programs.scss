@@ -1,0 +1,9 @@
+.programs {
+  margin-top: 3.2rem;
+
+  &__title {
+    @extend .work__title;
+
+    color: var(--color-primary-black);
+  }
+}

@@ -6,6 +6,8 @@
 > 
 > The content of this web page is for educational purpose but centered in a real problem over endangered andean cat.
 
+[Watch a video of the project](https://www.loom.com/share/be64d606068141afa1cd8372a9b6ff1c)
+
 ## Built With
 
 - HTML
@@ -32,7 +34,7 @@ This project has been deployed using Github page
 
 ### Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://dqarias.github.io/Capstone1-page/)
 
 ## Authors
 
@@ -54,9 +56,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- The original design was made by [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
+
 
 ## 📝 License
 

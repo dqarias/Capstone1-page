@@ -1,0 +1,48 @@
+.work {
+  background-color: var(--color-primary-black);
+  background-image: url("/assets/images/cardPatternBg.png");
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    color: var(--color-ligth-white);
+    text-align: center;
+    font-weight: 400;
+  }
+
+  &__title::after {
+    display: block;
+    clear: both;
+    content: "";
+    position: relative;
+    left: 0;
+    bottom: 0;
+    max-width: 50px;
+    height: 1px;
+    width: 50%;
+    border-bottom: 2px solid var(--color-primary-orange);
+    margin: 0 auto;
+    padding: 4px 0;
+  }
+
+  &__button {
+    margin: 1.6rem auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .work {
+    &__button {
+      & a {
+        background-color: transparent;
+        color: var(--color-ligth-gray);
+        padding: 0.8rem 1.6rem;
+        text-decoration: underline;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+  }
+}

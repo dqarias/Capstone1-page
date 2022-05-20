@@ -1,0 +1,167 @@
+.a-hero {
+  &__container {
+    padding-top: 6rem;
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
+    padding-bottom: 6rem;
+    background-image: url(../assets/images/mobile_intro_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__title {
+    margin: 1.6rem;
+
+    @extend .hero__title;
+
+    text-align: center;
+    background-image: none;
+    color: var(--color-primary-orange);
+  }
+
+  &__quote {
+    @extend .hero__quote;
+  }
+
+  &__description {
+    @include box;
+  }
+
+  &__contact {
+    font-size: 1.2rem;
+    margin-top: 1.6rem;
+    text-align: center;
+
+    &-email {
+      margin-top: 1.6rem;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+}
+
+.a-about {
+  padding: 3.2rem 1.6rem;
+  border-bottom: 1px solid var(--color-ligth-gray);
+
+  &__title {
+    margin: 1.6rem;
+    padding: 0 2.4rem;
+
+    @extend .work__title;
+
+    color: var(--color-primary-black);
+  }
+
+  &__description {
+    margin: 1.6rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  &__img {
+    margin: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include box;
+  }
+}
+
+.a-campaign {
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  padding: 0 1.6rem;
+
+  &__title {
+    @extend .work__title;
+
+    color: var(--color-primary-black);
+  }
+
+  &__description {
+    margin: 1.6rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  &__images {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3.2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  &__information {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+
+  &__txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-ligth-gray);
+
+    & .txt__year {
+      font-size: 2.4rem;
+      font-weight: 900;
+    }
+
+    & .txt__place {
+      font-weight: 700;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .a-hero {
+    &__container {
+      background-image: url(../assets/images/mainBg.png);
+      padding-top: 10%;
+      padding-left: 20%;
+      padding-right: 20%;
+      padding-bottom: 6%;
+    }
+
+    &__contact {
+      margin-top: 6%;
+      font-size: 1.6rem;
+    }
+  }
+
+  .a-about {
+    padding-left: 20%;
+    padding-right: 20%;
+
+    &__img {
+      margin: 4% 30%;
+    }
+  }
+
+  .a-campaign {
+    padding-left: 20%;
+    padding-right: 20%;
+
+    &__images {
+      flex-direction: row;
+      padding: 0;
+    }
+  }
+
+  .a-main {
+    & .partners {
+      display: none;
+    }
+  }
+
+  .a-footer {
+    background-color: var(--color-primary-black);
+    color: var(--color-ligth-gray);
+  }
+}

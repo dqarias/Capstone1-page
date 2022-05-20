@@ -1,0 +1,19 @@
+:root {
+  //Setting 1rem to 10px
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font-subtitles);
+  font-style: normal;
+  color: var(--color-primary-black);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}

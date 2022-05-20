@@ -1,0 +1,32 @@
+.partners {
+  padding: 3.2rem 1.6rem;
+  background-color: var(--color-primary-black);
+
+  &__title {
+    @extend .work__title;
+  }
+}
+
+.partner {
+  &__container {
+    margin-top: 2.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 30%;
+    max-width: 20rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .partner {
+    &__container {
+      gap: 1.5%;
+    }
+  }
+}
