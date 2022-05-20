@@ -3,7 +3,7 @@
   padding-right: 1.6rem;
   padding-left: 1.6rem;
   padding-bottom: 6rem;
-  background-image: url("/assets/images/bg_andean_cat_mobil.jpg");
+  background-image: url(/assets/images/bg_andean_cat_mobil.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 100px 100px 99999px rgba(33, 32, 32, 0.952);
@@ -17,7 +17,7 @@
   &__title {
     background-clip: text;
     -webkit-background-clip: text;
-    background-image: url("/assets/images/bg_title.jpg");
+    background-image: url(/assets/images/bg_andean_cat_mobil.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -65,7 +65,7 @@
     padding-right: 24%;
     padding-left: 8%;
     padding-bottom: 6rem;
-    background-image: url("/assets/images/bg_andean_cat_tablet.jpg");
+    background-image: url(/assets/images/bg_andean_cat_tablet.jpg);
 
     &__container {
       gap: 2rem;
@@ -104,7 +104,7 @@
     padding-right: 35%;
     padding-left: 12%;
     padding-bottom: 8%;
-    background-image: url("/assets/images/bg_andean_cat_desktop.jpg");
+    background-image: url(/assets/images/bg_andean_cat_desktop.jpg);
 
     &__container {
       gap: 2rem;
