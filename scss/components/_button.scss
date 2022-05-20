@@ -11,6 +11,7 @@
   color: var(--color-primary-orange);
   padding: 0.8rem 1.6rem;
   cursor: pointer;
+  transition: all ease 1s;
 }
 
 .btn-ligth {
@@ -18,4 +19,13 @@
   cursor: pointer;
   text-decoration: underline;
   color: var(--color-ligth-gray);
+}
+
+.btn-primary:hover{
+  border-radius: 8px;
+}
+
+.btn-info:hover{
+  background-color: var(--color-primary-orange);
+  color: var(--color-ligth-white);
 }

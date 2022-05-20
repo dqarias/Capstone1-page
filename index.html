@@ -29,38 +29,38 @@
         <li class="header__list"><a class="header__link" href="">Logout</a></li>
       </ul>
       <nav class="navigation">
-        <a class="navigation__logo" href="./index.html"
+        <a class="navigation__logo" href="#hero"
           ><img class="logo" src="./assets/images/logo-3.png" alt=""
         /></a>
-        <img
-          class="navigation__menu"
-          src="./assets/images/mobile_menu.png"
-          alt=""
-        />
         <ul class="navigation__links">
           <li class="navigation__list">
-            <a class="navigation__link" href="#">About</a>
+            <a class="navigation__link" href="./about.html">About</a>
           </li>
           <li class="navigation__list">
-            <a class="navigation__link" href="#">Work</a>
+            <a class="navigation__link" href="#work">Work</a>
           </li>
           <li class="navigation__list">
-            <a class="navigation__link" href="#">Programs</a>
+            <a class="navigation__link" href="#program">Programs</a>
           </li>
           <li class="navigation__list">
-            <a class="navigation__link" href="#">Library</a>
+            <a class="navigation__link" href="#partner">Allies</a>
           </li>
           <li class="navigation__list">
             <a class="navigation__link" href="#">Gallery</a>
           </li>
-          <li class="navigation__list">
-            <a class="navigation__link btn-info" href="#">Donate</a>
+          <li class="navigation__list-btn">
+            <a class="navigation__btn btn-info" href="#">Donate</a>
           </li>
         </ul>
+        <div class="navigation__menu">
+          <span class="bar"> </span>
+          <span class="bar"> </span>
+          <span class="bar"> </span>
+        </div>
       </nav>
     </header>
     <main>
-      <section class="hero">
+      <section id="hero" class="hero">
         <article class="hero__container">
           <h1 class="hero__title">
             <span class="hero__quote">Four Counties bound together </span
@@ -80,7 +80,7 @@
           </div>
         </article>
       </section>
-      <section class="work">
+      <section id="work" class="work">
         <h2 class="work__title">Our Work</h2>
         <div class="card">
           <article class="card__container">
@@ -139,65 +139,12 @@
           <a class="btn-primary" href="">Get Involved</a>
         </div>
       </section>
-      <section class="programs">
+      <section id="program" class="programs">
         <h2 class="programs__title">Our Programs</h2>
         <div class="program">
-          <article class="program__container">
-            <div class="programs__image">
-              <img
-                class="program-img"
-                src="./assets/images/sponsor2.jpg"
-                alt=""
-              />
-            </div>
-            <div class="information">
-              <h3 class="information__name">Sponsor an Andean Cat</h3>
-              <p class="information__phrase">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <p class="information__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-                eveniet ad! Ullam dignissimos voluptatum voluptatibus?
-              </p>
-            </div>
-          </article>
-          <article class="program__container">
-            <div class="programs__image">
-              <img class="program-img" src="./assets/images/adopt.jpg" alt="" />
-            </div>
-            <div class="information">
-              <h3 class="information__name">Adopt a symbolic Cat</h3>
-              <p class="information__phrase">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <p class="information__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-                eveniet ad! Ullam dignissimos voluptatum voluptatibus?
-              </p>
-            </div>
-          </article>
-          <article class="program__container">
-            <div class="programs__image">
-              <img
-                class="program-img"
-                src="./assets/images/catcrafts.jpg"
-                alt=""
-              />
-            </div>
-            <div class="information">
-              <h3 class="information__name">Catcrafts</h3>
-              <p class="information__phrase">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <p class="information__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-                eveniet ad! Ullam dignissimos voluptatum voluptatibus?
-              </p>
-            </div>
-          </article>
         </div>
       </section>
-      <section class="partners">
+      <section id="partner" class="partners">
         <h2 class="partners__title">Our Allies</h2>
         <div class="partner__container">
           <div class="partner__logo">
@@ -259,5 +206,7 @@
         </div>
       </section>
     </footer>
+    <script src="./js/programs.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -1,18 +1,90 @@
 .navigation {
-  background-color: transparent;
   padding: 1.6rem;
-
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  background-color: transparent;
   &__logo {
     display: none;
   }
-
   &__menu {
-    width: 3rem;
-    height: 2.5rem;
+    display: inline-block;
+    cursor: pointer;
+    & .bar{
+      display: block;
+      width: 2.5rem;
+      height: 0.3rem;
+      margin: 0.5rem auto;
+      transition: all 0.3s ease-in-out;
+      background-color: var(--color-ligth-gray); 
+    }
   }
 
-  &__links {
-    display: none;
+  &__menu.active{
+    cursor: pointer;
+    & .bar:nth-child(2) {
+      opacity: 0;
+    }
+    & .bar:nth-child(1) {
+      transform: translateY(0.8rem) rotate(45deg);
+      background-color: var(--color-ligth-gray);
+    }
+    & .bar:nth-child(3) {
+      transform: translateY(-0.8rem) rotate(-45deg);
+      background-color: var(--color-ligth-gray);
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navigation{
+    &__links {
+      position: fixed;
+      left: -100%;
+      top: 0;
+      width: 90%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding-top: 6rem;
+      background-color: rgba(43, 44, 45, 0.909);
+      
+    }
+
+    &__list{
+      padding-bottom: 1.5rem;
+      padding-top: 1.5rem;
+      border-bottom:2px solid var(--color-ligth-gray);
+      width: 90%;
+      &:hover{
+        background-color: var(--color-transparent-orange);
+        border-bottom:0px solid var(--color-ligth-gray);
+        border-left: 6px solid var(--color-primary-orange);
+      }
+
+      &-btn{
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+      }
+    }
+    &__link{
+      color: var(--color-ligth-gray);
+      transition: 0.7s ease;
+      padding-left: 3.2rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    &__btn{
+      margin-left: 3.2rem;
+    }
+
+    &__links.active{
+    left: 0;
+  }
   }
 }
 
@@ -39,9 +111,17 @@
       justify-content: flex-end;
       padding-right: 8%;
       gap: 6%;
+     
       & .navigation__link {
         color: #272a31;
       }
+
+      & .navigation__link:hover {
+        color: #ec5242;
+      }
+    }
+    &__links.active{
+      left: 0;
     }
   }
 }
