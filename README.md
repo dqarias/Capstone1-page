@@ -6,7 +6,7 @@
 > 
 > The content of this web page is for educational purpose but centered in a real problem over endangered andean cat.
 
-[Watch a video of the project](../../issues/).
+[Watch a video of the project](https://www.loom.com/share/be64d606068141afa1cd8372a9b6ff1c)
 
 ## Built With
 
