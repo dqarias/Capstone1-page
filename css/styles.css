@@ -601,6 +601,10 @@ ul {
   padding: 3.2rem;
 }
 
+.a-footer {
+  padding: 3.2rem;
+}
+
 .bg__dark {
   background-color: var(--color-primary-black);
   color: var(--color-ligth-gray);
@@ -788,9 +792,15 @@ ul {
     flex-direction: row;
     padding: 0;
   }
-}
-.a-main .partners {
-  display: none;
+
+  .a-main .partners {
+    display: none;
+  }
+
+  .a-footer {
+    background-color: var(--color-primary-black);
+    color: var(--color-ligth-gray);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
